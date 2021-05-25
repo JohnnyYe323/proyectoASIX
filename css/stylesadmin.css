@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #8898ffbe, #88fff9be);
+}
+
+.elementos {
+    padding: 9% 40% 0 40%;
+}
+
+.user {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.logout button {
+    background-color: #8898ff;
+    padding: 3px 15px;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    top: 7%;
+    right: 3%;
+}
+
+.logout button:hover {
+    background-image: linear-gradient(to bottom right, #8898ffbe, #88fff9be);
+}
+
+.crud button {
+    background-color: #8898ff;
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.filtro input {
+    font-size: 15px;
+    height: 30px;
+}
+
+.textobuscar {
+    background-color: #c4ccff;
+}
+
+.buscar {
+    background-color: #8898ff;
+}
+
+.buscar:hover {
+    background-image: linear-gradient(to bottom right, #8898ffbe, #88fff9be);
+}
+
+.tab button {
+    background-color: #8898ff;
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-image: linear-gradient(to bottom right, #8898ffbe, #88fff9be);
+}
+
+.tab button.active {
+    background-color: #84d4ecbe;
+}
+
+.tabcontent {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1%;
+}
+
+.tabcontent td,
+.tabcontent th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.tabcontent tr {
+    background-color: #f2f2f2;
+}
+
+.tabcontent tr:nth-child(even) {
+    background-color: #d8d8d8;
+}
+
+.tabcontent tr:hover {
+    background-color: #dbdaff;
+}
+
+.tabcontent th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #b6b5ff;
+    font-size: 19px;
+}
+
+.centrarTabla {
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+.tabla {
+    text-align: center;
+}
+
+.ocultar {
+    display: none;
+}
+
+.añadir button {
+    background-color: #8898ff;
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 50%;
+    left: 43%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.añadir button:hover {
+    background-image: linear-gradient(to bottom right, #8898ffbe, #88fff9be);
+}
+
+.btnCRUD {
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.csv {
+    background-color: #8898ff;
+    padding: 3px 15px;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    left: 43%;
+}
+
+.csv:hover {
+    background-image: linear-gradient(to bottom right, #8898ffbe, #88fff9be);
+}
+
+.carga {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    display: none;
+    backdrop-filter: blur(6px);
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #8898ffbe;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .centrarTabla {
+        display: block;
+        overflow-x: auto;
+    }
+    .user {
+        position: absolute;
+        top: 0%;
+        left: 3%;
+    }
+    .logout {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    }
+    .elementos {
+        padding: 33% 35% 0 35%;
+    }
+    .csv {
+        position: relative;
+        left: 35%;
+    }
+}

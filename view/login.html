@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icono.png">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../js/scripts.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="login">
+            <h1>Login</h1><br><br>
+            <form action="../process/login.proc.php" method="post" onsubmit="return validar();">
+                <input class="input" type="text" id="user" name="user" placeholder="Usuario" onkeyup="myFunction()"><br>
+
+                <input class="input" type="password" id="pass" name="pass" placeholder="Contraseña" onkeyup="myFunction()"><br>
+                <div id='mensaje'></div><br>
+
+                <input class="btnLogin" type="submit" value="INICIAR SESIÓN">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
